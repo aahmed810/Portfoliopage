@@ -1,0 +1,821 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* light / dark mode*/
+#icon {
+    width: 30px;
+    cursor: pointer;
+    padding-left: 10px;
+    position: absolute;
+    top: 9%;
+    right: 10%;
+}
+
+:root {
+    --primary-color: rgb(0, 0, 0);
+    --secondary-color: rgb(255, 255, 255);
+}
+
+.light-theme {
+    --primary-color: rgb(255, 255, 255);
+    --secondary-color: rgb(0, 0, 0);
+}
+
+.Page1 {
+    min-height: 100vh;
+    max-height: 100vh;
+    background-color: var(--primary-color);
+    overflow: hidden;
+}
+
+.portfolio-img img {
+    width: 25rem;
+    height: 35rem;
+    overflow: hidden;
+}
+
+.portfolio-img {
+    background-color: var(--secondary-color);
+
+}
+
+.Header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.logo a {
+    color: var(--secondary-color);
+    font-size: larger;
+}
+
+.logo a:visited {
+    text-decoration: none;
+}
+
+.nav-links ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+
+.nav-links li {
+    padding: 1rem;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
+        Helvetica, Arial, "Lucida Grande", sans-serif;
+    color: var(--secondary-color);
+}
+
+.nav-links li a {
+    padding: 1rem;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
+        Helvetica, Arial, "Lucida Grande", sans-serif;
+    color: var(--secondary-color);
+}
+
+.nav-links li a:hover {
+    color: rgb(139, 137, 137);
+}
+
+.menu-icon {
+    background-color: var(--secondary-color);
+}
+
+#ri-menu-3-line {
+    color: #ff004f;
+    background-color: var(--secondary-color);
+}
+
+.container {
+    margin: 1rem;
+    padding: 1rem;
+    /* box-shadow: 30px 30px 30px 30px rgba(255, 255, 255, 0.233);*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+
+}
+
+.social-media {
+    position: absolute;
+    top: 80%;
+    left: 3%;
+    border: 5px var(--secondary-color) solid;
+}
+
+.social-media ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.social-media li {
+    padding: 1rem;
+    text-decoration: none;
+    margin: 5px;
+}
+
+.social-media li a {
+    color: var(--secondary-color);
+    font-size: 30px;
+}
+
+.social-media li a:hover {
+    color: rgb(139, 137, 137);
+}
+
+
+.intro {
+    font-size: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-evenly;
+}
+
+.intro h1 {
+    position: relative;
+    top: -10%;
+    left: -5%;
+    font-size: 100px;
+    font-family: "poppins";
+    font-weight: 700;
+    letter-spacing: 10px;
+    color: var(--secondary-color);
+
+}
+
+.intro h5 {
+    position: relative;
+    top: -15%;
+    left: -5%;
+    font-size: 30px;
+    font-family: "poppins";
+    font-weight: 400;
+    letter-spacing: 5px;
+    color: var(--secondary-color);
+}
+
+/* typewriter effect*/
+span {
+    animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+
+/* Portfolio page*/
+.Page2 {
+    min-height: 100%;
+    max-height: 100%;
+    background-color: var(--primary-color);
+    overflow: auto;
+}
+
+.container-pics {
+    margin: 1rem 5rem 1rem 5rem;
+    padding: 1rem;
+    border: 5px red;
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.container-pics img {
+    height: 30rem;
+    width: 20rem;
+    padding: 4px;
+    flex-shrink: 1;
+}
+
+
+/* Resume page */
+.Page3 {
+    min-height: 100vh;
+    max-height: auto;
+    background-color: var(--primary-color);
+    overflow: auto;
+}
+
+.Resume-pic h1 {
+    color: var(--secondary-color);
+    font-size: 2rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
+
+}
+
+.Resume-pic {
+    padding-bottom: 10px;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Resume-pic img {
+    height: 65rem;
+    width: auto;
+    margin-bottom: 3rem;
+    --webkit-image-resolution: 800dpi;
+    padding-bottom: 50px;
+}
+
+/* About Page */
+.about-info h1 {
+    /* font-family;*/
+    font-weight: 600;
+    font-size: xx-large;
+    margin-bottom: 3rem;
+    text-decoration: solid underline rgb(4, 56, 4) 10px;
+}
+
+.about-info p {
+    font-weight: 400;
+    font-size: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    word-spacing: 0.1rem;
+    line-height: 2.5rem;
+
+}
+
+h1,
+p {
+    color: var(--secondary-color);
+}
+
+.Page4 {
+    min-height: 100vh;
+    max-height: 100%;
+    background-color: var(--primary-color);
+    overflow: auto;
+}
+
+.container-about {
+    margin: 25px;
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.portrait img {
+    height: 30rem;
+    width: 26rem;
+    margin: 2rem 4rem 4rem 4rem;
+}
+
+.about-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.social-media-about ul {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+}
+
+.social-media-about li {
+    margin: 30px 30px 30px 0px;
+    padding-top: 10px;
+    padding-right: 16px;
+    text-decoration: none;
+    list-style: none;
+}
+
+.social-media-about li a {
+    color: var(--secondary-color);
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.social-media-about li a:hover {
+    color: rgb(139, 137, 137);
+}
+
+/* Contact Page */
+
+
+.Page5 {
+    min-height: 100vh;
+    max-height: 100%;
+    background-color: var(--primary-color);
+    overflow: auto;
+}
+
+.container-form {
+    height: 100%;
+    margin-bottom: 0%;
+    padding: 20px 30px 130px 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(159, 68, 68);
+}
+
+form {
+    background-color: rgba(223, 200, 200, 0.7);
+
+    width: 30rem;
+    padding: 30px;
+    margin-left: 30px;
+    border-radius: 25px;
+}
+
+.form-image img {
+    height: 35rem;
+    width: auto;
+    border-radius: 25px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: baseline;
+}
+
+.title {
+    color: #fff;
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 1;
+    margin-bottom: 0.7rem;
+}
+
+.input-container {
+    position: relative;
+    margin: 1rem 0;
+}
+
+.input {
+    width: 20rem;
+    outline: none;
+    border: 2px solid #fafafa;
+    background: none;
+    padding: 0.6rem 1.2rem;
+    color: #fff;
+    font-weight: 500;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+textarea.input {
+    padding: 0.6rem 1.2rem;
+    min-height: 165px;
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+}
+
+.btn {
+    padding: 0.6rem 1.3rem;
+    background-color: #fff;
+    border: 2px solid #fafafa;
+    font-size: 0.95rem;
+    color: rgb(159, 68, 68);
+    line-height: 1;
+    border-radius: 25px;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 0;
+}
+
+.btn:hover {
+    background-color: transparent;
+    color: #fff;
+}
+
+.input-container ::placeholder {
+    color: #fafafa;
+    font-size: 0.9rem;
+    font-weight: 400;
+    transition: 0.5s;
+}
+
+.input-container textarea ::placeholder {
+    color: #fafafa;
+    font-size: 0.9rem;
+    font-weight: 400;
+    transition: 0.5s;
+}
+
+/* Projects Page */
+
+.Page5 {
+    min-height: 100vh;
+    max-height: 100%;
+    background-color: var(--primary-color);
+    overflow: hidden;
+
+}
+
+.projects-table {
+    margin: 50px;
+    height: 50%;
+    width: auto;
+}
+
+.work-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.projects-table img {
+    height: 28rem;
+    width: 22rem;
+    padding: 4px;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: row;
+}
+
+.layer {
+    margin: 10px;
+    width: 95%;
+    border-radius: 10px;
+    display: block;
+    background: rgb(148, 148, 221);
+    background: linear-gradient(0deg, rgba(103, 103, 211, 1) 0%, rgb(184, 42, 75) 100%);
+    position: relative;
+}
+
+.layer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.layer h4 {
+    color: var(--secondary-color);
+    font-weight: 300;
+    font-size: 23px;
+}
+
+.layer a {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #ff004f;
+    text-decoration: none;
+    font-size: 30px;
+    line-height: 60px;
+    background: var(--secondary-color);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.fa-link {
+    color: var(--primary-color);
+}
+
+.fa-link:hover {
+    color: gray;
+}
+
+#txt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+#txt {
+    font-size: larger;
+    color: var(--secondary-color);
+}
+
+
+
+
+
+@media (max-width:1024px) {
+    .Page1 {
+        margin: 0;
+        margin-bottom: 5px;
+        padding: 0;
+        box-sizing: border-box;
+        min-height: 100vh;
+        max-height: fit-content;
+        overflow: scroll;
+
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .intro {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .intro h1 {
+        margin-left: 3rem;
+    }
+
+    .intro h5 {
+        margin-left: 2rem;
+
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .portfolio-img {
+        margin-top: 0rem;
+        margin-bottom: 50px;
+    }
+
+    .social-media {
+        position: relative;
+        top: 42rem;
+        left: 0rem;
+    }
+
+
+    .burger-menu {
+        background-color: var(--primary-color);
+        display: block;
+        height: 30px;
+        width: 35px;
+        position: absolute;
+        top: 25px;
+        left: 20px;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        cursor: pointer;
+    }
+
+    .burger-menu div {
+        display: block;
+        height: 3px;
+        width: 100%;
+        background: var(--secondary-color);
+    }
+
+    .burger-menu .top-bun {
+        transform-origin: 0% 0%;
+        transition: transform 0.1s ease-in-out;
+    }
+
+    .burger-menu .patty {
+        width: 20px;
+        transition: transform 0.4s ease-in-out;
+    }
+
+    .burger-menu .bottom-bun {
+        transform-origin: 0% 100%;
+        transition: transform 0.1s ease-in-out;
+    }
+
+    .burger-menu.open .top-bun {
+        transform: rotate(50deg);
+    }
+
+    .burger-menu.open .patty {
+        opacity: 0;
+
+    }
+
+    .burger-menu.open .bottom-bun {
+        transform: rotate(-50deg);
+    }
+
+    .overlay.open {
+        background-color: var(--primary-color);
+        position: absolute;
+        height: 175%;
+        width: 100%;
+        top: 0;
+        z-index: 1;
+        transform: translatey(100px);
+        transition: 0.4s ease-in-out;
+    }
+
+    .overlay.open .nav-links {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 2rem;
+        color: var(--secondary-color);
+        font-weight: 500;
+        transition: 0.4s ease-in-out;
+    }
+
+    .overlay.open ul {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #icon {
+        position: relative;
+        top: 50%;
+        left: 0%;
+        margin: 15px;
+        height: 30px;
+        width: 40px;
+    }
+
+    .Resume-pic img {
+        max-width: 75%;
+        max-height: 125%;
+    }
+
+    /* portfolio Page */
+    .container-pics {
+        margin: 1rem;
+    }
+
+    .projects-table {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .projects-table img {
+        flex-shrink: 1;
+    }
+
+    .work-list {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    /* About Page */
+    .container-about {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+
+    }
+
+    .portrait img {
+        height: 30rem;
+        width: 26rem;
+        margin: -3rem 4rem 4rem 4rem;
+    }
+
+    /*contact page */
+    
+    .form-image{
+        display: none;
+    }
+    .container-form{
+        margin-top: 26px;
+        padding: 20px 45px 130px 30px;
+    }
+    .contact-form{
+        transform: scale(0.70);
+    }
+}
+
+@media (max-width:1062px) {
+
+    /* Projects Page */
+    .projects-table img {
+        height: 25rem;
+        width: 20rem;
+        padding: 4px;
+        border-radius: 5%;
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media (min-width : 1024px) and (max-width:1234px) {
+
+    /* About Page img */
+    .portrait img {
+        height: 30rem;
+        width: 26rem;
+        margin: -9rem 4rem 4rem 4rem;
+    }
+}
+
+@media (min-width : 1024px) and (max-width:1047px) {
+
+    /* About Page img */
+    .portrait img {
+        height: 30rem;
+        width: 26rem;
+        margin: -18rem 4rem 4rem 4rem;
+    }
+}
+@media (max-width : 440px){
+    /* Index Page */
+    .Page1 {
+        margin: 0;
+        margin-bottom: 5px;
+        padding: 0;
+        box-sizing: border-box;
+        min-height: 100%;
+        max-height: fit-content;
+        overflow: scroll;
+
+    }
+
+    .intro {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .intro h1 {
+        margin-left:3rem;
+        font-size: 5rem;
+    }
+
+    .intro h5 {
+        margin-left: 2rem;
+
+    }
+
+    .portfolio-img {
+        margin-top: 0rem;
+        margin-bottom: 50px;
+    }
+    .portfolio-img img{
+        width: 22rem;
+        height: 30rem;
+       overflow: auto;
+    }
+    .social-media {
+        position: relative;
+        top: 38rem;
+        left: 0rem;
+    }
+    /* resume Page */
+    .Resume-pic img {
+        max-width: 90%;
+        max-height: 125%;
+    }
+
+    /* About Page */
+    .portrait img {
+        height: 26rem;
+        width: 22rem;
+        margin: -3rem 4rem 4rem 4rem;
+    }
+    .container-about{
+        margin-right: -30px;
+        margin-left: -30px;
+        
+    }
+
+} 
+
