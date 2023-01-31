@@ -1,3 +1,3 @@
 # Portfoliopage
 
-https://asa2908.uta.cloud/portfolio/Portfolio.html
+https://asa2908.uta.cloud/portfolio
